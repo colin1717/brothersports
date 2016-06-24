@@ -13,6 +13,8 @@ body {
         list-style: none; }
         body nav ul li:active {
           border: white solid 2px; }
+  body h1 {
+    color: white; }
   body .main .logo {
     margin-top: 8%;
     display: flex;
