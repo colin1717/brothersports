@@ -3,6 +3,12 @@ body {
   background-size: cover; }
   body nav {
     height: 65px; }
+    body nav ul {
+      display: flex;
+      flex-direction: row; }
+      body nav ul li {
+        color: white;
+        list-style: none; }
   body .main .logo {
     margin-top: 10%;
     display: flex;

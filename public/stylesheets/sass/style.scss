@@ -4,6 +4,16 @@ body {
 
   nav {
     height: 65px;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        color: white;
+        list-style: none;
+      }
+    }
   }
 
   .main {
