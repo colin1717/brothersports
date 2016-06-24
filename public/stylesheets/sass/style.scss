@@ -22,6 +22,21 @@ body {
     }
   }
 
+  .content {
+    margin: auto;
+    text-align: center;
+
+    .single-show {
+      margin: auto;
+      color: white;
+      height: 100px;
+      width: 400px;
+      border: white 2px solid;
+      margin-top: 15px;
+      padding-top: 15px;
+    }
+  }
+
   h1 {
     color: white;
   }

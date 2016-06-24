@@ -13,6 +13,17 @@ body {
         list-style: none; }
         body nav ul li:active {
           border: white solid 2px; }
+  body .content {
+    margin: auto;
+    text-align: center; }
+    body .content .single-show {
+      margin: auto;
+      color: white;
+      height: 100px;
+      width: 400px;
+      border: white 2px solid;
+      margin-top: 15px;
+      padding-top: 15px; }
   body h1 {
     color: white; }
   body .main .logo {

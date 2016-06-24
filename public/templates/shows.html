@@ -1,5 +1,14 @@
-<div class="main container-fluid">
-  <div class="logo row">
+<div class="container-fluid">
+  <div class="content">
     <h1>Shows</h1>
+    <div class="shows" ng-controller="ShowsController as shows">
+      <div class='single-show' ng-repeat='obj in shows.showList'>
+        Date: {{ obj.date }}
+        <br>
+        Where: {{ obj.venue }}
+        <br>
+        Who: {{ obj.memo }}
+      </div>
+    </div>
   </div>
 </div>
