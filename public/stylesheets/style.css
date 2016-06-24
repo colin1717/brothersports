@@ -2,15 +2,17 @@ body {
   background: url("../images/roof.jpg") no-repeat top fixed;
   background-size: cover; }
   body nav {
-    height: 65px; }
+    height: 65px;
+    margin-top: 20px; }
     body nav ul {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      justify-content: space-between; }
       body nav ul li {
         color: white;
         list-style: none; }
   body .main .logo {
-    margin-top: 10%;
+    margin-top: 8%;
     display: flex;
     justify-content: center; }
     body .main .logo img {

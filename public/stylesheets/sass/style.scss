@@ -4,10 +4,12 @@ body {
 
   nav {
     height: 65px;
+    margin-top: 20px;
 
     ul {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
 
       li {
         color: white;
@@ -19,7 +21,7 @@ body {
   .main {
 
     .logo {
-      margin-top: 10%;
+      margin-top: 8%;
       display: flex;
       justify-content: center;
 
