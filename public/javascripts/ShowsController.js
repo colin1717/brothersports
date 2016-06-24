@@ -8,4 +8,6 @@ angular
     this.showList = [
       {date: "July 16th", venue: "Barracuda", memo: "other bands playing"}
     ];
+
+
   }
