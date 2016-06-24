@@ -1,0 +1,23 @@
+body {
+  background: url('../images/roof.jpg') no-repeat top fixed;
+  background-size: cover;
+
+  nav {
+    height: 65px;
+  }
+
+  .main {
+
+    .logo {
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+
+        img {
+        height: 500px;
+        width: 800px;
+        color: pink;
+      }
+    }
+  }
+}
