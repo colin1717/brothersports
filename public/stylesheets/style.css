@@ -11,6 +11,8 @@ body {
       body nav ul li {
         color: white;
         list-style: none; }
+        body nav ul li:active {
+          border: white solid 2px; }
   body .main .logo {
     margin-top: 8%;
     display: flex;
