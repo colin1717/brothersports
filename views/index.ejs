@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<html ng-app="BrotherSportsApp">
+<html ng-app="brotherSportsApp">
   <head>
     <title>brothersports</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src='/javascripts/app.js'></script>
   </head>
   <body>
     <nav class='container'>
       <ul class='row'>
+        <li ui-sref='home' ui-sref-active='active'>home</li>
         <li>news</li>
         <li>music</li>
-        <li>shows</li>
+        <li ui-sref='shows' ui-sref-active='active'>shows</li>
         <li>photos</li>
         <li>contact</li>
       </ul>
     </nav>
-    <div class="main container-fluid">
-      <div class="logo row">
-        <img src="images/bslogo.svg" alt="" />
-      </div>
-    </div>
+    <main ui-view>
     <footer></footer>
   </body>
 </html>
