@@ -3,11 +3,11 @@
     <h1>Shows</h1>
     <div class="shows" ng-controller="ShowsController as shows">
       <div class='single-show' ng-repeat='obj in shows.showList'>
-        Date: {{ obj.date }}
+        Date: <strong>{{ obj.date }} </strong>
         <br>
-        Where: {{ obj.venue }}
+        Where: <strong> {{ obj.venue }} </strong>
         <br>
-        Who: {{ obj.memo }}
+        Who: <strong>{{ obj.memo }} </strong>
       </div>
     </div>
   </div>
