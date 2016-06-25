@@ -12,6 +12,8 @@ body {
       justify-content: space-between;
 
       li {
+        font-family: 'Amatic SC', cursive;
+        font-size: 24pt;
         color: white;
         list-style: none;
 
@@ -36,20 +38,24 @@ body {
       margin: auto;
       color: black;
       background-color: transparentize(white, .1);
-      height: 115px;
+      font-family: 'Amatic SC', cursive;
+      font-size: 20pt;
+      height: auto;
       width: 40%;
       min-width: 400px;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       margin-top: 15px;
-      padding-top: 15px;
+      padding: 15px;
     }
 
     .single-news {
       margin: auto;
       color: black;
       background-color: transparentize(white, .1);
+      font-family: 'Amatic SC', cursive;
+      font-size: 20pt;
       height: auto;
       padding: 20px;
       width: 40%;
@@ -58,7 +64,7 @@ body {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       margin-top: 15px;
-      padding-top: 15px;
+      padding: 15px;
     }
   }
 
