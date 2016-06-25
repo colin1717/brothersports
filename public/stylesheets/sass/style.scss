@@ -59,6 +59,18 @@ body {
 
   .main {
 
+    .social {
+      margin-top: 120px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 0 5px 0 5px;
+        height: 70px;
+        width: 70px;
+      }
+    }
+
     .logo {
       margin-top: 2.5%;
       display: flex;
