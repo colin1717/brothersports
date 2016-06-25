@@ -69,6 +69,6 @@ body {
       display: flex;
       justify-content: center; }
       body .main .logo img {
-        height: 500px;
-        width: 800px;
-        color: pink; }
+        width: 80%;
+        height: 100%;
+        padding-top: 10%; }
