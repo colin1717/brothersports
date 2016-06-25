@@ -6,19 +6,15 @@ angular
   function ShowsController($http){
     var self = this;
 
-    this.showList = [
-
-    ];
+    this.showList = [];
 
     function getShows(){
       $http
         .get('/shows')
         .then(function(response){
-          console.log(response.data);
           self.showList = response.data;
         })
     }
 
      getShows();
-     console.log(self.showList);
   }
