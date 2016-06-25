@@ -46,6 +46,12 @@ body {
       margin: 0 5px 0 5px;
       height: 70px;
       width: 70px; }
+  body .main .soundcloud-embeds {
+    padding-top: 50px;
+    margin: auto;
+    width: 60%; }
+    body .main .soundcloud-embeds iframe {
+      padding-bottom: 25px; }
   body .main .logo {
     margin-top: 2.5%;
     display: flex;
