@@ -13,6 +13,8 @@ body {
         list-style: none; }
         body nav ul li:active {
           border: white solid 2px; }
+  body label {
+    color: white; }
   body .content {
     margin: auto;
     text-align: center; }

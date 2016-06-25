@@ -13,6 +13,11 @@ router.get('/', function(req, res, next) {
   });
 });
 
+/* Create new show */
+router.get('/new', function(req, res, next){
+  res.render('showsforms/new');
+});
+
 /* POST /shows */
 router.post('/', function(req, res, next) {
   var show = new Show(req.body);
