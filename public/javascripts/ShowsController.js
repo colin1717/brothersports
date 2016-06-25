@@ -7,6 +7,7 @@ angular
     var self = this;
 
     this.showList = [];
+    this.newsList = [];
 
     function getShows(){
       $http
@@ -16,5 +17,15 @@ angular
         })
     }
 
+    function getNews(){
+      $http
+        .get('/news')
+        .then(function(response){
+          self.newsList = response.data;
+          console.log(self.newsList);
+        })
+    }
+
      getShows();
+     getNews();
   }
