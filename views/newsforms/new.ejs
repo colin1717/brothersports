@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrotherSports</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+  <div class="container">
+    <h1>New News Post</h1>
+
+    <form name="new_news_form" action="/news" id='new_news_form' method='post'>
+      <div class="form-group">
+        <label for="date">Title:</label>
+        <input class="form-control" type="text" name='title' id='title'>
+      </div>
+      <div class="form-group">
+        <label for="Memo">Post:</label>
+        <textarea class='form-control' rows='5' type="text" name='post' id='post'></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Save">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

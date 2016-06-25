@@ -13,6 +13,11 @@ router.get('/', function(req, res, next){
   });
 });
 
+/* Create new news Post */
+router.get('/new', function(req, res, next){
+  res.render('newsforms/new');
+})
+
 /* Post /news */
 router.post('/', function(req, res, next){
   var news = new News(req.body);
@@ -20,7 +25,7 @@ router.post('/', function(req, res, next){
     if (err) {
       res.status(500).send();
     } else {
-      res.json(news);
+      res.redirect('/');
     }
   });
 });
