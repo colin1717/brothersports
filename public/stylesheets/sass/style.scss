@@ -35,10 +35,13 @@ body {
     .single-show {
       margin: auto;
       color: black;
-      background-color: transparentize(pink, .2);
-      height: 100px;
-      width: 400px;
-      border: black 2px solid;
+      background-color: transparentize(white, .1);
+      height: 115px;
+      width: 40%;
+      min-width: 400px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
       margin-top: 15px;
       padding-top: 15px;
     }
@@ -46,10 +49,14 @@ body {
     .single-news {
       margin: auto;
       color: black;
-      background-color: transparentize(aquamarine, .2);
-      height: 100px;
-      width: 400px;
-      border: black 2px solid;
+      background-color: transparentize(white, .1);
+      height: auto;
+      padding: 20px;
+      width: 40%;
+      min-width: 400px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
       margin-top: 15px;
       padding-top: 15px;
     }

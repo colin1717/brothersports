@@ -1,6 +1,7 @@
 body {
   background: url("../images/roof.jpg") no-repeat top fixed;
-  background-size: cover; }
+  background-size: cover;
+  /* CSS for news and shows divs */ }
   body nav {
     height: 65px;
     margin-top: 20px; }
@@ -21,42 +22,53 @@ body {
     body .content .single-show {
       margin: auto;
       color: black;
-      background-color: rgba(255, 192, 203, 0.8);
-      height: 100px;
-      width: 400px;
-      border: black 2px solid;
+      background-color: rgba(255, 255, 255, 0.9);
+      height: 115px;
+      width: 40%;
+      min-width: 400px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
       margin-top: 15px;
       padding-top: 15px; }
     body .content .single-news {
       margin: auto;
       color: black;
-      background-color: rgba(127, 255, 212, 0.8);
-      height: 100px;
-      width: 400px;
-      border: black 2px solid;
+      background-color: rgba(255, 255, 255, 0.9);
+      height: auto;
+      padding: 20px;
+      width: 40%;
+      min-width: 400px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
       margin-top: 15px;
       padding-top: 15px; }
   body h1 {
     color: white; }
-  body .main .social {
-    margin-top: 120px;
-    display: flex;
-    justify-content: center; }
-    body .main .social img {
-      margin: 0 5px 0 5px;
-      height: 70px;
-      width: 70px; }
-  body .main .soundcloud-embeds {
-    padding-top: 50px;
-    margin: auto;
-    width: 60%; }
-    body .main .soundcloud-embeds iframe {
-      padding-bottom: 25px; }
-  body .main .logo {
-    margin-top: 2.5%;
-    display: flex;
-    justify-content: center; }
-    body .main .logo img {
-      height: 500px;
-      width: 800px;
-      color: pink; }
+  body .main {
+    /* Social media contact buttons */
+    /* Soundcloud embeds */
+    /* Logo CSS */ }
+    body .main .social {
+      margin-top: 120px;
+      display: flex;
+      justify-content: center; }
+      body .main .social img {
+        margin: 0 5px 0 5px;
+        height: 70px;
+        width: 70px; }
+    body .main .soundcloud-embeds {
+      padding-top: 50px;
+      margin: auto;
+      width: 60%; }
+      body .main .soundcloud-embeds iframe {
+        padding-bottom: 25px; }
+    body .main .logo {
+      margin-top: 2.5%;
+      display: flex;
+      justify-content: center; }
+      body .main .logo img {
+        height: 500px;
+        width: 800px;
+        color: pink; }
