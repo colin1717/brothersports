@@ -2,12 +2,19 @@ angular
   .module("brotherSportsApp")
   .controller("ShowsController", ShowsController);
 
-  function ShowsController(){
+  ShowsController.$inject = ['$http'];
+  function ShowsController($http){
     var self = this;
 
-    this.showList = [
-      {date: "July 16th", venue: "Barracuda", memo: "other bands playing"}
-    ];
+    this.showList = [];
 
+    function getShows(){
+      $http
+        .get('/shows')
+        .then(function(response){
+          self.showList = response.data;
+        })
+    }
 
+     getShows();
   }

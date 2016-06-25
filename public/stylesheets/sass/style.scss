@@ -22,6 +22,22 @@ body {
     }
   }
 
+  .content {
+    margin: auto;
+    text-align: center;
+
+    .single-show {
+      margin: auto;
+      color: black;
+      background-color: transparentize(pink, .2);
+      height: 100px;
+      width: 400px;
+      border: black 2px solid;
+      margin-top: 15px;
+      padding-top: 15px;
+    }
+  }
+
   h1 {
     color: white;
   }
