@@ -2,19 +2,21 @@
 <div class="container">
   <div class="row editlists" ng-controller="ShowsController as news">
     <div class="news col-md-5" id='deletenews'>
+      <h4>News</h4>
       <div class="delete-item" ng-repeat='obj in news.newsList'>
         <div class="row">
           {{ obj.title }}
-          <button type="button" class="btn btn-default btn-sm">Delete</button>
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
         </div>
       </div>
     </div>
     <div class="col-md-2"></div>
     <div class="shows col-md-5" id='deleteshows'>
+      <h4>Shows</h4>
       <div class="delete-item" ng-repeat='obj in news.showList'>
         <div class="row">
           {{ obj.date }}
-          <button type="button" class="btn btn-default btn-sm">Delete</button>
+          <button type="button" class="btn btn-danger btn-sm">Delete</button>
         </div>
       </div>
     </div>

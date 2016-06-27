@@ -18,6 +18,8 @@ body {
           border: white solid 2px; }
   body .editlists {
     margin-top: 25px; }
+    body .editlists h4 {
+      text-align: center; }
     body .editlists .shows {
       margin-top: 5px;
       background-color: rgba(255, 255, 255, 0.9);
@@ -34,6 +36,9 @@ body {
     justify-content: center; }
     body .newstuff button {
       margin: 0px 5px 0px 5px; }
+  body .delete-button {
+    text-align: center;
+    margin-top: 3px; }
   body label {
     color: white; }
   body .content {
