@@ -5,7 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var session = require('express-session');
+
 mongoose.connect(process.env.DB_CONN_HANDBANANA);
+
+var passport = require('passport');
+var LocalStrategy = require('passport-local');
+var User = require('./models/user');
+passport.use(User.createStrategy());
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -13,6 +20,19 @@ var shows = require('./routes/shows');
 var news = require('./routes/news');
 
 var app = express();
+
+//express session middleware
+app.use(session({
+  secret: process.env.SESSION_KEY || 'foobar',
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

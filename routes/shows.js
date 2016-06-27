@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var Show = require('../models/show');
+var passport = require('passport');
+var User = require('../models/user');
 
 /* GET /Shows */
 router.get('/', function(req, res, next) {
@@ -13,13 +15,21 @@ router.get('/', function(req, res, next) {
   });
 });
 
+function checkLoggedIn(req, res, next){
+  if (req.isAuthenticated()){
+    next();
+  }else {
+    res.redirect('/login');
+  }
+};
+
 /* Create new show */
-router.get('/new', function(req, res, next){
+router.get('/new', checkLoggedIn, function(req, res, next){
   res.render('showsforms/new');
 });
 
 /* POST /shows */
-router.post('/', function(req, res, next) {
+router.post('/', checkLoggedIn, function(req, res, next) {
   var show = new Show(req.body);
   show.save(function(err) {
     if (err) {

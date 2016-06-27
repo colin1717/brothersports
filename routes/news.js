@@ -13,13 +13,21 @@ router.get('/', function(req, res, next){
   });
 });
 
+function checkLoggedIn(req, res, next){
+  if (req.isAuthenticated()){
+    next();
+  }else {
+    res.redirect('../');
+  }
+};
+
 /* Create new news Post */
-router.get('/new', function(req, res, next){
+router.get('/new', checkLoggedIn, function(req, res, next){
   res.render('newsforms/new');
 })
 
 /* Post /news */
-router.post('/', function(req, res, next){
+router.post('/', checkLoggedIn, function(req, res, next){
   var news = new News(req.body);
   news.save(function(err){
     if (err) {
