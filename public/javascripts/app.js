@@ -28,6 +28,10 @@ function MainRouter($stateProvider, $urlRouterProvider){
     .state('contact', {
       url: '/contact',
       templateUrl: '../templates/contact.html'
+    })
+    .state('delete', {
+      url:'/delete',
+      templateUrl: '../templates/delete.html'
     });
 
     $urlRouterProvider.otherwise('/');

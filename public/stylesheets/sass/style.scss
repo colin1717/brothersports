@@ -24,6 +24,26 @@ body {
     }
   }
 
+  .editlists {
+    margin-top: 25px;
+
+    .shows {
+      margin-top: 5px;
+      background-color: transparentize(white, .1);
+      min-height: 200px;
+    }
+
+    .news {
+      background-color: transparentize(white, .1);
+      min-height: 200px;
+    }
+
+    .delete-item {
+      margin-top: 5px;
+      text-align: center;
+    }
+  }
+
   .newstuff {
     margin: 200px 0 0 0;
     display: flex;
