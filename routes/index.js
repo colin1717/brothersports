@@ -13,22 +13,22 @@ router.get('/login', function(req, res, next) {
 })
 
 
-router.post('/signup', function(req, res, next) {
-  var user = new User({ username: req.body.username });
-  User.register(user, req.body.password, function(error) {
-    if (error) {
-      res.send(error);
-    } else {
-      req.login(user, function(loginError) {
-        if (loginError) {
-          res.send('login Error: ' + loginError)
-        } else {
-          res.redirect('/')
-        }
-      });
-    }
-  });
-});
+// router.post('/signup', function(req, res, next) {
+//   var user = new User({ username: req.body.username });
+//   User.register(user, req.body.password, function(error) {
+//     if (error) {
+//       res.send(error);
+//     } else {
+//       req.login(user, function(loginError) {
+//         if (loginError) {
+//           res.send('login Error: ' + loginError)
+//         } else {
+//           res.redirect('/')
+//         }
+//       });
+//     }
+//   });
+// });
 
 /* Create new show */
 router.get('/newcontent', checkLoggedIn, function(req, res, next){
