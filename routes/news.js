@@ -62,7 +62,7 @@ router.get('/:newsId', function(req, res, next){
 /* Put skip for now */
 
 /* Delete /news */
-router.delete(':newsId', function(req, res, next){
+router.delete('/:newsId', function(req, res, next){
   News.remove({'_id': res.news._id}, function (err) {
     if (err) {
       res.status(500).send();

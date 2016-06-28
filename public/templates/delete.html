@@ -6,7 +6,7 @@
       <div class="delete-item" ng-repeat='obj in news.newsList'>
         <div class="row">
           {{ obj.title }}
-          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+          <button type="button" class="btn btn-danger btn-sm" ng-click="news.deleteNewsItem(obj._id)">Delete</button>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
       <div class="delete-item" ng-repeat='obj in news.showList'>
         <div class="row">
           {{ obj.date }}
-          <button type="button" class="btn btn-danger btn-sm">Delete</button>
+          <button type="button" class="btn btn-danger btn-sm" ng-click="news.deleteShowItem(obj._id)">Delete</button>
         </div>
       </div>
     </div>

@@ -22,7 +22,23 @@ angular
         .get('/news')
         .then(function(response){
           self.newsList = response.data;
-          console.log(self.newsList);
+        })
+    }
+
+    this.deleteShowItem = function(showId){
+      $http
+        .delete('/shows/' + showId)
+        .then(function(response){
+          getShows();
+        })
+    }
+
+    this.deleteNewsItem = function(newsId){
+      $http
+        .delete('/news/' + newsId)
+        .then(function(response){
+          console.log(response);
+          getNews();
         })
     }
 

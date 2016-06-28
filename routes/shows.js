@@ -84,7 +84,7 @@ router.put(':/showId', function(req, res, next){
 });
 
 /* Delete /shows */
-router.delete(':showId', function(req, res, next){
+router.delete('/:showId', function(req, res, next){
   Show.remove({'_id': res.show._id}, function (err) {
     if (err) {
       res.status(500).send();
