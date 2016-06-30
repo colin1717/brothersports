@@ -15,7 +15,7 @@
       <h4>Shows</h4>
       <div class="delete-item" ng-repeat='obj in news.showList'>
         <div class="row">
-          {{ obj.date }}
+          {{ obj.date | date: MM/dd/yyyy}}
           <button type="button" class="btn btn-danger btn-sm" ng-click="news.deleteShowItem(obj._id)">Delete</button>
         </div>
       </div>

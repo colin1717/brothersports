@@ -3,12 +3,12 @@
     <div class="shows" ng-controller="ShowsController as shows">
       <div class='single-show' ng-repeat='obj in shows.showList'>
         <div class="showflyer" ng-if="obj.flyer">
-          <a ng-href="{{ obj.flyer }}">
+          <a ng-href="{{ obj.flyer }}" target="_blank">
             <img src="{{ obj.flyer }}" alt="flyer" />
           </a>
         </div>
         <div class="showinfo">
-          Date: <strong>{{ obj.date }} </strong>
+          Date: <strong>{{ obj.date | date: MM/dd/yyyy }} </strong>
           <br>
           Where: <strong> {{ obj.venue }} </strong>
           <br>

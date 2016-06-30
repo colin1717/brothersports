@@ -6,7 +6,7 @@ var User = require('../models/user');
 
 /* GET /Shows */
 router.get('/', function(req, res, next) {
-  Show.find({}, function(err, shows){
+  Show.find({}, null, {sort: {date: 1}}, function(err, shows){
     if (err) {
       res.status(500).send();
     } else {

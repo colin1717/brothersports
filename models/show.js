@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var ShowSchema = new mongoose.Schema({
-  date: String,
+  date: Date,
   venue: String,
   memo: String,
   flyer: String,
