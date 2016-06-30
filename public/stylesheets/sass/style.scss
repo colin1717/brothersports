@@ -87,6 +87,23 @@ body {
       border-bottom-right-radius: 4px;
       margin-top: 15px;
       padding: 15px;
+      display: flex;
+
+      .showflyer {
+        width: 150px;
+        height: 150px;
+        background-color: transparentize(blue, .5);
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      .showinfo {
+        text-align: center;
+        margin: auto;
+      }
     }
 
     .single-news {
