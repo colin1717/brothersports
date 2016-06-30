@@ -3,7 +3,9 @@
     <div class="shows" ng-controller="ShowsController as shows">
       <div class='single-show' ng-repeat='obj in shows.showList'>
         <div class="showflyer" ng-if="obj.flyer">
-          <img src="{{ obj.flyer }}" alt="flyer" />
+          <a ng-href="{{ obj.flyer }}">
+            <img src="{{ obj.flyer }}" alt="flyer" />
+          </a>
         </div>
         <div class="showinfo">
           Date: <strong>{{ obj.date }} </strong>
